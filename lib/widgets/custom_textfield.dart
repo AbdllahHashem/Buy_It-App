@@ -5,8 +5,8 @@ import '../constants.dart';
 class CustomTextField extends StatelessWidget {
 
   final String hint;
-  final IconData icon;
-  final  Function  onClick;
+   IconData? icon;
+   final Function onClick;
   String? _errMessage(String str)
   {
     switch(hint)
@@ -18,8 +18,8 @@ class CustomTextField extends StatelessWidget {
   }
   CustomTextField({
     required this.hint,
-    required this.icon,
-    required  this.onClick,
+     this.icon,
+     required this.onClick,
   });
 
   @override

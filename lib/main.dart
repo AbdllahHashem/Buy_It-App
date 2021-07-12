@@ -1,9 +1,10 @@
 import 'package:buy_it_app/provider/admin_mode.dart';
 import 'package:buy_it_app/provider/model_hud.dart';
-import 'package:buy_it_app/screens/admin_screen.dart';
+import 'package:buy_it_app/screens/admin/add_product.dart';
+import 'package:buy_it_app/screens/admin/admin_screen.dart';
 import 'package:buy_it_app/screens/home_screen.dart';
-import 'package:buy_it_app/screens/login_screen.dart';
-import 'package:buy_it_app/screens/signup_screen.dart';
+import 'package:buy_it_app/screens/user/login_screen.dart';
+import 'package:buy_it_app/screens/user/signup_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -39,6 +40,7 @@ class MyApp extends StatelessWidget {
           SignUPScreen.id: (context) => SignUPScreen(),
           HomePage.id: (context) => HomePage(),
           AdminPage.id:(context)=>AdminPage(),
+          AddProduct.id:(context)=>AddProduct(),
         },
       ),
     );
